@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="stylesheet" href="../../../css/textmenu.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlighting();
+  </script>
+</head>
+<body class="dark-theme">
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../../index.html">
+          <h2> devTBenoth </h2>
+        </a>
+        <div class="btn-group">
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="sun"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button>
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="flex-wrapper">
+          <ul class="desktop-nav">
+            <li>
+              <a href="../../../../index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="../../about_me.html" class="nav-link">About Me</a>
+            </li>
+          </ul>
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="sun"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button>
+        </div>
+        <div class="mobile-nav">
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="wrapper">
+            <p class="h3 nav-title">Main Menu</p>
+            <ul>
+              <li class="nav-item">
+                <a href="../../../../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="../../about_me.html" class="nav-link">About Me</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="h3 nav-title">Topics</p>
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Assembly Language </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> C programming</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="blog">
+          <h2 class="h2">crackme CTF Solution #1 </h2>
+          <div class="blog-card-group">
+            <main class="conMain">
+                <div class="conText">
+                    <h2> Kısa Giriş </h2> <hr> <br> 
+                    <p> Merhabalar. Bu blogumda basit bir <strong> crackme ctf </strong> çözümünden bahsedeceğim. </p> <br>
+                    <p> Seçtiğim CTF oldukça basit. Sadece 2 yöntemden bahsedeceğim çözüm için. 1. çözüm CTF'in doğru çözümü, 
+                      diğer çözüm ise benim sıklıkla kullandığım yöntemlerden biri. 
+                      <br> <br>
+                      Çözeceğimiz CTF, <strong> RedXen's C File Crackme </strong> adlı bir CTF. Linkine <a href="https://crackmes.one/crackme/62de952533c5d44a934e997b"> buradan </a> ulaşabilirsiniz.
+                    </p>
+                    <br>
+                    <h2> Kısa olarak ZIP'e bakış </h2> <hr> <br>
+                    <p> Başlamadan önce ZIP'e bir göz atalım.</p> <br>
+                    <div class="contentImg">
+                      <img src="https://camo.githubusercontent.com/ee0fb7cb2be29b48a8c6a430714d38dec5dbee3910c32f45f70c8bef7c172a92/68747470733a2f2f692e6962622e636f2f44473874714a562f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d31392d31392e706e67" alt="" width="100%" height="100%">
+                      <h5 style="text-align: center"> ZIP İçeriği </h5> <a href="https://camo.githubusercontent.com/ee0fb7cb2be29b48a8c6a430714d38dec5dbee3910c32f45f70c8bef7c172a92/68747470733a2f2f692e6962622e636f2f44473874714a562f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d31392d31392e706e67"> <ion-icon name="scan-outline"></ion-icon> </a> <br>
+                    </div>
+                    <p> 
+                      ZIP içeriğine bakıldığında sadece bir exe dosyası ve BIN adlı bir dosya görüyoruz. Zaten bu konulara biraz bile aşinasanız, BIN dosyasını gördükten sonra çözümün ne olduğunu anlamışsınızdır.  
+                    </p> <br>
+                    <h2> Hedef Programın Çalışma Mantığı </h2> <hr> <br> 
+                    <p>
+                      Öncelikle elimizde olan exe dosyasını çalıştıralım ve ne gördüğümüze bakalım: 
+                    </p> <br>
+                    <div class="contentImg">
+                      <img src="https://camo.githubusercontent.com/bd5262f700932b639214b2f9de06ae75973325ddae920ff467c909653d6b39bc/68747470733a2f2f692e6962622e636f2f31524c394d6e742f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d32372d32382e706e67" width="50%" height="50%">
+                      <h5> ScreenShot 0x1 ** Program Çıktısı <a href="https://camo.githubusercontent.com/bd5262f700932b639214b2f9de06ae75973325ddae920ff467c909653d6b39bc/68747470733a2f2f692e6962622e636f2f31524c394d6e742f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d32372d32382e706e67"> <ion-icon name="scan-outline"></ion-icon> </a> </h5>
+                    </div> <br>
+                    <p>
+                      Göründüğü gibi, program çalıştırıldığında sadece <i> Incorrect! Try Again. </i> adlı bir mesaj ile karşılaşıyoruz.
+                      Bunun sebebi ise, program bir dosyadan key kontrolü yapıyor ve key'ler uyuşmadığı için bu hata mesajıyla karşılaşıyoruz.
+                      <br> <br>
+                      Program key'i ise BIN dosyasından kontrol ediyor. Dolasıyla bizde birkaç reverse taktiği ile KEY'i bulup BIN dosyası içerisine yazacağız. Böylece başarılı bir sonuç elde edeceğiz.
+                    </p> <br>
+                    <h2> Çözüm 1 </h2> <hr> <br> 
+                    <p>
+                      Bu blogda çözümü anlatmak için kullanacağım tool x32dbg olacak. <br> <br> 
+                      Öncelikle dosyayı x32dbg ile açalım. Daha sonra öncelikle stringlere bir göz atalım. xdbg aracı bu imkanı bize sunuyor. CPU sekmesinden herhangi bir yere sağ tıklayıp Search For > All Modules > String References sekmesine tıklayalım. Karşımıza şu ekran çıkacaktır:
+                    </p> <br>
+                    <div class="contentImg">
+                      <img src="https://camo.githubusercontent.com/8c08e2f2accd206fccb9404171e5396e68d948a71bc796ca1278bb84ad3f76a2/68747470733a2f2f692e6962622e636f2f794252686756722f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d32362d31362e706e67" alt="" width="800px" height="550px">
+                      <h5> ScreenShot 0x2 ** String Reference Sekmesi <a href="https://camo.githubusercontent.com/8c08e2f2accd206fccb9404171e5396e68d948a71bc796ca1278bb84ad3f76a2/68747470733a2f2f692e6962622e636f2f794252686756722f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d32362d31362e706e67"> <ion-icon name="scan-outline"></ion-icon> </a> </h5>
+                    </div> <br>
+                    <p>
+                       <strong> Peki bu <i> String References </i> ne oluyor? </strong> xdbg aracındaki string references, debug edilen programın içerisindeki stringleri gösterir. Yani kısa tabirle, programın belleğindeki stringleri gösterir. 
+                       <br> <br>
+                       Debug ettiğimiz programda stringleri kontrol etmek önemlidir. Bu zira tek Reverse için değil, Malware Analysis alanı için de önemli. Malware'ların özünde hafızada gizlenmek olduğu için, bazen hafızadaki stringleri şifreleme veya karıştırma gibi durumları söz konusu olabiliyor. Bu yüzden şifrelenen veya bozulan stringleri tespit etmek, malware'in sistemde ne gibi davranışı olduğunu öğrenmek ve malware'i tespit etmek için önemli bir aşama olduğunu düşünüyorum.  
+                      <br> <br>
+                      Yukarıda hatırlarsanız program çıktısını kontrol etmiştik. Program çıktısında elde ettiğiniz her stringi taramak önemlidir. Bize çıktı olarak <i> Incorrect! Try  Again </i> adlı bir çıktı vermişti. Şimdi ise String References kısmından bu stringi aratalım: 
+                    </p>
+                    <div class="contentImg">
+                      <br>
+                      <img src="https://camo.githubusercontent.com/fd4fee393b46f441988db87282ec1a9a5f4b5aaaddda0abaa57a045eb0322d83/68747470733a2f2f692e6962622e636f2f58744b633742302f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d33332d30392e706e67" alt="">
+                      <h5> ScreenShot 0x3 = String References Çıktısı <a href="https://camo.githubusercontent.com/fd4fee393b46f441988db87282ec1a9a5f4b5aaaddda0abaa57a045eb0322d83/68747470733a2f2f692e6962622e636f2f58744b633742302f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d33332d30392e706e67"> <ion-icon name="scan-outline"></ion-icon></a> </h5>
+                    </div> <br>
+                    <p>
+                      Göründüğü gibi, programın stringlerini kontrol ettiğimizde programın hata çıktısını veren stringi görebiliyoruz.
+                      <br> <br>
+                      Şimdi ise bu stringin üzerine iki kez tıklayalım:
+                    </p>
+                    <br> 
+                    <div class="contentImg">
+                      <img src="https://camo.githubusercontent.com/24af04074f11a0ff5f43f0323c1b59fe2bfe4a9586ea68b771d7c5067ab085aa/68747470733a2f2f692e6962622e636f2f566d6e58626e522f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d33352d33352e706e67" alt="">
+                      <h5> ScreenShot 0x4 - Programın Hata Stringi <a href="https://camo.githubusercontent.com/24af04074f11a0ff5f43f0323c1b59fe2bfe4a9586ea68b771d7c5067ab085aa/68747470733a2f2f692e6962622e636f2f566d6e58626e522f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d33352d33352e706e67"> <ion-icon name="scan-outline"></ion-icon></a></h5>
+                    </div> <br>
+                    <p>
+                      String'e iki kez tıkladığımızda yorum satırı olarak bir key'e rastlıyoruz. Aslında çözümü bulduk ancak birkaç daha adım uygulamamız gerekiyor. 
+                      <br> <br>
+                      Burada bir duralım ve Assembly kodlarına bir bakalım. Eğer <strong> 0040156F </strong> kısmındaki komuta bakarsanız başta bir fonksiyon çağırılıyor. Bu fonksiyon ret olarak döndüğünde ise <strong> TEST EAX,EAX</strong> ile eax register'i sıfırlanıyor. Daha sonra 
+                    </p>
+                     <div class="codeBlockContainer">
+                      <div class="codeBlock">
+                        <pre>
+                          <code>
+                            CALL c file crackme.401501 <br> 
+                              TEST EAX,EAX <br>
+                              JNE C file crackme.401586 <br>
+                          </code>
+                        </pre>
+                      </div>
+                     </div>
+                     <p>
+                      Bu kodlara baktığımızda bir fonksiyon çağırma sonucunda <strong> TEST EAX,EAX </strong> ile EAX register'i and işlemine tabii tutuluyor. Daha sonra bir karşılaştırma yapılıyor. Karşılaştırma için JNE kullanılmış. Assembly'de JNE komutunun anlamı 'Jump Not Equal' anlamına gelir; yani eşit değilse. 
+                     </p> <br>
+                     <p>
+                      Tabi ki kodları tam okumadığımız için tam olarak neler yaptığını anlamamız normal. Ancak tahmin yürütürsek eğer JNE sonucu başarılı olursa istediğimiz başarı mesajını ekrana bastıracak. Eğer JNE komutu çalışmazsa alttan devam edip hata mesajını ekrana bastıracak.
+                      <br> <br>
+                      Şimdi konumuza dönelim. Elimizde artık key var. Yukarıda bahsettiğim gibi, program BIN dosyasını kontrol ederek işlemlerini gerçekleştiriyor. Elimizde bulunan key'i bin dosyasına kaydedelim.
+                     </p> <br>
+                     <p> Eğer Linux Tabanlı bir sistem kullanıyorsanız aşağıdaki komut ile hızlı bir şekilde kaydedebilirsiniz: </p> 
+                     <div class="codeBlockContainer">
+                      <div class="codeBlock">
+                        <pre>
+                          <code class="language-bash">
+                            echo "W269N-WFGWX-YVC9B-4J6C9-T83GX" > password.bin
+                          </code>
+                        </pre>
+                      </div>
+                     </div>
+                     <p>
+                      Ve şimdi programı tekrar çalıştıralım: 
+                     </p> <br>
+                     <div class="contentImg">
+                      <img src="https://camo.githubusercontent.com/bcdcbd1a5759a6d75ca51e328955591f119a8b0bac69de5d5ed1af55957ddb35/68747470733a2f2f692e6962622e636f2f347064334a4a592f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d34312d35362e706e67" alt="">
+                      <h5> 0x5 - Başarı Mesajı <a href="https://camo.githubusercontent.com/bcdcbd1a5759a6d75ca51e328955591f119a8b0bac69de5d5ed1af55957ddb35/68747470733a2f2f692e6962622e636f2f347064334a4a592f53637265656e73686f742d66726f6d2d323032322d30382d32372d32332d34312d35362e706e67"> <ion-icon name="scan-outline"></ion-icon></a> </h5>
+                     </div>
+                     <br>
+                     <p>
+                      Göründüğü gibi, çok basit işlemlerle CTF'i çözmüş olduk.
+                     </p>
+                </div>
+            </main>
+          </div>
+            <a href="../../../../index.html"> <button class="btn load-more">Back to Home Page --> </button> </a>
+        </div>
+        <div class="aside">
+          <div class="topics">
+            <h2 class="h2">Topics</h2>
+            <a href="../reverse-category.html" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="sync-outline"></ion-icon>
+              </div>
+              <p> Reverse Engineering </p>
+            </a>
+            <a href="../assembly-category.html" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <p> Assembly  </p>
+            </a>
+          </div>
+          <div class="tags">
+            <h2 class="h2">Tags</h2>
+            <div class="wrapper">
+              <button class="hashtag">#assemblylanguage</button>
+              <button class="hashtag">#binary</button>
+              <button class="hashtag">#cprogramming</button>
+              <button class="hashtag">#socketprogramming</button>
+              <button class="hashtag">#programming</button>
+            </div>
+          </div>
+          <div class="contact">
+            <h2 class="h2">Let's Talk</h2>
+            <div class="wrapper">
+              <p>
+                  Eğer konularda takıldığınız noktalar veya sorularınız olursa benimle iletişime geçebilirsiniz!
+              </p>
+              <ul class="social-link">
+                <li>
+                  <a href="https://github.com/devTBenoth" class="icon-box github">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/froghlatasch" class="icon-box instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="icon-box reddit">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../js/menu.js"></script>
+  <script src="../../../js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

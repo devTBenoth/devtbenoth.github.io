@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlighting();
+  </script>
+</head>
+<body class="dark-theme">
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../../index.html">
+          <h2> devTBenoth </h2>
+        </a>
+        <div class="btn-group">
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="sun"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button>
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="flex-wrapper">
+          <ul class="desktop-nav">
+            <li>
+              <a href="../../../../index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="../../about_me.html" class="nav-link">About Me</a>
+            </li>
+            <li>
+                <a href="../../myCV/cv.pdf" class="nav-link">Resume</a>
+            </li>
+          </ul>
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="sun"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button>
+        </div>
+        <div class="mobile-nav">
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="wrapper">
+            <p class="h3 nav-title">Main Menu</p>
+            <ul>
+              <li class="nav-item">
+                <a href="../../../../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="../../about_me.html" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="../../myCV/cv.pdf" class="nav-link">Resume</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="h3 nav-title">Topics</p>
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Reverse Engineering </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Assembly </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link"> Malware Analysis </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="blog">
+          <h2 class="h2">What is Stack? What is it used for? </h2>
+          <div class="blog-card-group">
+            <main class="conMain">
+                <div class="conText">
+                  <p>
+                    Merhabalar. Bu yazımda Stack'ten bahsedeceğim. Zira ilk Assembly Blog'um olarak Stack'ten bahsetmek istedim. Çünkü Stack'in önemli bir konu olduğunu düşünüyorum ve diğer blog'larımda Stack'ten çok yararlanacağız. Bu yüzden her şeyden önce Stack ile başlamak istedim. 
+                  </p> <br> 
+                  <h2> Nedir bu Stack? </h2> <hr> <br> 
+                  <p>
+                    Kısa ve öz şekilde Stack, LIFO (Last in First Out) mantığı ile çalışan, verilerin geçiçi olarak depolanması ve çıkarılması için kullanılan bir <strong> veri yapısıdır.</strong> Burada bahsedilen veriler, program içerisinde çağırılan fonksiyonun çalışması için gerekli olan parametreler veya değişkenler saklanabilir veya program ile alakalı değerler veya değişkenler saklanabilir. Bunlar sadece bir kaç örnek.
+                  </p> <br>
+                  <p>
+                    Stack'in LIFO mantığı ile çalıştığını söyledim. Bu ne oluyor Peki? Adından anlaşılacağı gibi Stack, son giren ilk çıkar mantığı ile çalışır. Yani Stack'e ilk gönderilen veri her zaman en sonda kalır. Çünkü Stack içerisindeki veriler <strong> alta doğru büyür. </strong>
+                  </p> <br>
+                  <p>
+                    İşte stack için basit bir örnek: </p> <br>  
+                    <div class="contentImg">
+                      <img src="../../../images/stack.jpg" alt="">
+                    </div> <br>
+                  <p>
+                    Yukarıdaki fotoğraf, Stack'in mantığını kısa bir şekilde açıklıyor.  <br> <br>
+
+                    Yukarıdaki fotoğrafta <strong> data1, data2, data3, data4 </strong> olarak 4 tane data yerleştirilmiş. Stack'in alta doğru büyüdüğünden bahsetmiştim. İlk veri olan data4 en üst veri olarak en alttadır ve data1 ise en alt veri olarak en üsttedir. Ancak stack'ten bir veri çıkarılmak istendiğinde altındaki diğer veriler kaldırılması gerekir. 
+                    <br> <br> 
+                    Burada bahsettiğim "altındaki veriler" kafanızı biraz karıştırabilir. Stack'in alta doğru büyüdüğünü söyledim. Yani alta büyüdüğü kadar da yukarıya doğru küçülür. Dolayısıyla siz en üstteki veriyi kaldırmak isterseniz alttaki verileri kaldırmanız gerekir. 
+                    <br> <br>
+                  </p>
+                    <div class="contentImg">
+                      <img src="../../../images/stack2.png" alt="">
+                    </div> <br>
+                  <p>
+                    Yukarıda Photoshop ile hazırladığım fotoğraf ile aklınızda böyle tutabileceğinizi düşünüyorum. <br> <br>
+                  </p>
+                  <br> 
+                  <h2> Stack Pointer </h2> <hr> <br> 
+                  <p>
+                    Devam etmeden önce kısaca Stack Pointer'dan bahsedelim. Eğer biraz Assembly diline aşina iseniz Stack Pointer'i elbet duymuşsunuzdur. Stack Pointer (Kısa yazılımı ile <strong> SP </strong>), Stack'in başlangıç adresini tutan bir register'dir. Yani programlama da kullanılan tabir ile bir pointer. <br> <br>
+                    
+                    SP, en alttaki verinin adresini tutar; yani en son eklenen verinin adresini tutar. Program içerisinde Stack'e eklenen verilere göre veya çıkarılan adreslere göre SP'nin adresi ve değeri değişebilir. Bunun sebebi Stack'e bir veri eklendiğinde SP'nin değeri <strong> 4 byte azalır</strong>. Zıt şekilde bir veri çıkarıldığında <strong> 4 byte artar</strong>. <br> <br>
+                  </p>
+                  <br> 
+                  <h2> PUSH ve POP Komutları </h2> <hr> <br> 
+                  <p>
+                    Assembly dilinde Stack'e veri göndermek ve veri çıkarmak için <strong> PUSH </strong> ve <strong> POP </strong> komutlarını kullanırız:
+                  </p>
+                  <ul>
+                    <li style="text-align: center; font-size: 21px;"> <span> PUSH <b> --> </b> </span> Stack'e veri gönderir. </li>
+                    <li style="text-align: center; font-size: 21px;"> <span> POP <b> --> </b> </span> Stack'ten veri çıkarır. </li>
+                  </ul> 
+                  <p>
+                    Stack'e her veri eklendiğinde 4 byte azaldığını, veri çıkarıldığında ise 4 byte arttığını söylemiştim. Şimdi ise basit bir örnek yapalım ve Debugger ile kontrol edelim.
+                  </p> 
+                  <div class="codeBlockContainer">
+                    <div class="codeBlock">
+                      <pre>
+                        <code style="font-size: 16px;">
+                          BITS 32
+                        </br> </br>
+                          section .data  <br/>
+                              &nbsp; &nbsp; &nbsp; msg: db "Hello World", 0x0A <br/>
+                              &nbsp; &nbsp; &nbsp; len: equ $ - msg <br/> <br/>
+
+                          section .text <br/>
+                              &nbsp; &nbsp; &nbsp; global _start <br/> <br/>
+
+                          _start: <br/>
+                            &nbsp; &nbsp; &nbsp; push len <br/> 
+                            &nbsp; &nbsp; &nbsp; push msg <br/> 
+                            &nbsp; &nbsp; &nbsp; call _printMessage <br/> 
+                            <br/> 
+                            &nbsp; &nbsp; &nbsp; mov eax,1 <br/> 
+                            &nbsp; &nbsp; &nbsp; xor ebx,ebx <br/> 
+                            &nbsp; &nbsp; &nbsp; int 0x80 <br/> 
+                            <br>
+                          _printMessage: <br/>
+                            &nbsp; &nbsp; &nbsp; mov eax,4 <br/> 
+                            &nbsp; &nbsp; &nbsp; mov ebx,1 <br/> 
+                            &nbsp; &nbsp; &nbsp; pop ecx  <br/> 
+                            &nbsp; &nbsp; &nbsp; pop edx  <br/> 
+                            &nbsp; &nbsp; &nbsp; int 0x80 <br/> 
+                            &nbsp; &nbsp; &nbsp; ret <br/> 
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  <p>
+                    Yukarıda X86_64 Linux Assembly ile yazdığım kod, Hello World Mesajını ve mesaj uzunluğunu başta Stack'e gönderir ve <strong> _printMessage </strong> adlı fonksiyon çağırılarak stack'e gönderilen mesaj ve uzunluğu stack'ten çıkarılarak mesaj ekrana bastırılır. 
+                    <br> <br>
+                    Yukarıdaki <strong> _start </strong> fonksiyon içerisindeki stack durumu şu şekildedir: 
+                  </p> <br>
+                  <div class="contentImg">
+                    <img src="../../../images/stack3.png" alt="">
+                  </div>
+                  <br> 
+                  <p>
+                    Yukarıdaki fotoğraf, _start label içerisindeki stack durumunu göstermektedir. 
+                    <br> <br>
+                    Stack Pointer'ın olduğu yere dikkat ederseniz, msg değişkenin olduğu yerde. Şu anlama geliyor: Stack Pointer, msg değişkenin adresini işaret ettiğini gösteriyor. 
+                    <br> <br>
+                    Şunu unutmayın, SP, Stack'e eklenen en son verinin adresini tutar - yani o değişkenin adresini gösterir -.
+                  </p>
+                  <div class="codeBlockContainer">
+                    <div class="codeBlock">
+                      <pre>
+                        <code style="font-size: 16px;">
+                          _printMessage: <br/>
+                            &nbsp; &nbsp; &nbsp; mov eax,4 <br/> 
+                            &nbsp; &nbsp; &nbsp; mov ebx,1 <br/> 
+                            &nbsp; &nbsp; &nbsp; pop ecx  <br/> 
+                            &nbsp; &nbsp; &nbsp; pop edx  <br/> 
+                            &nbsp; &nbsp; &nbsp; int 0x80 <br/> 
+                            &nbsp; &nbsp; &nbsp; ret <br/> 
+                        </code>
+                      </pre>
+                    </div>
+                  </div>
+                  <p>
+                    <strong> _printMessage </strong> fonksiyonu içerisine baktığımızda sadece bir write syscall'ın yürütüldüğünü görüyoruz. Ancak mesaj ekrana bastırılırken stack'e gönderilen mesaj ve değeri pop ile çıkarılarak ekrana bastırılıyor.
+                    <br> <br> 
+
+                  </p>
+                  </div>
+            </main>
+          </div>
+            <a href="../../../../index.html"> <button class="btn load-more">Back to Home Page --> </button> </a>
+        </div>
+        <div class="aside">
+          <div class="topics">
+            <h2 class="h2">Topics</h2>
+            <a href="../reverse-category.html" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="sync-outline"></ion-icon>
+              </div>
+              <p> Reverse Engineering </p>
+            </a>
+            <a href="../assembly-category.html" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <p> Assembly  </p>
+            </a>
+          </div>
+          <div class="tags">
+            <h2 class="h2">Tags</h2>
+            <div class="wrapper">
+              <button class="hashtag">#assemblylanguage</button>
+              <button class="hashtag">#stack</button>
+              <button class="hashtag">#littleendian</button>
+              <button class="hashtag">#bigendian</button>
+            </div>
+          </div>
+          <div class="contact">
+            <h2 class="h2">Let's Talk</h2>
+            <div class="wrapper">
+              <p>
+                  Eğer konularda takıldığınız noktalar veya sorularınız olursa benimle iletişime geçebilirsiniz!
+              </p>
+              <ul class="social-link">
+                <li>
+                  <a href="https://github.com/devTBenoth" class="icon-box github">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/froghlatasch" class="icon-box instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="icon-box reddit">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

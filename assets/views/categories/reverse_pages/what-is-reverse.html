@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/atom-one-dark.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    hljs.initHighlighting();
+  </script>
+</head>
+<body class="dark-theme">
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <a href="../../../../index.html">
+          <h2> devTBenoth </h2>
+        </a>
+        <div class="btn-group">
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="sun"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button>
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+        </div>
+        <div class="flex-wrapper">
+          <ul class="desktop-nav">
+            <li>
+              <a href="../../../../index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="../../about_me.html" class="nav-link">About Me</a>
+            </li>
+            <li>
+                <a href="../../myCV/cv.pdf" class="nav-link">Resume</a>
+            </li>
+          </ul>
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="sun"></ion-icon>
+            <ion-icon name="sunny" class="moon"></ion-icon>
+          </button>
+        </div>
+        <div class="mobile-nav">
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+          <div class="wrapper">
+            <p class="h3 nav-title">Main Menu</p>
+            <ul>
+              <li class="nav-item">
+                <a href="../../../../index.html" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="../../about_me.html" class="nav-link">About Me</a>
+              </li>
+              <li>
+                <a href="../../myCV/cv.pdf" class="nav-link">Resume</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="h3 nav-title">Topics</p>
+            <ul>
+              <li class="nav-item">
+                <a href="../reverse-category.html" class="nav-link"> Reverse Engineering </a>
+              </li>
+              <li class="nav-item">
+                <a href="../assembly-category.html" class="nav-link"> Assembly Language </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="blog">
+          <h2 class="h2">What is Reverse Engineering? </h2>
+          <div class="blog-card-group">
+            <main class="conMain">
+                <div class="conText">
+                   <p>
+                        Merhabalar. Bu blogumda <strong> Reverse Engineering Nedir? Neler Yapılır? </strong> vs. bunlardan bahsedeceğim.
+                        <br> <br>
+                    </p>
+                    <h2> Nedir bu Reverse Engineering? </h2> <hr> <br>
+                    <p>
+                        Öncelikle uzaktan şöyle bir tanım ile başlayalım. Aslında <i> Reverse Engineering</i>, bir şeyin işlevini veya tasarımını anlamak, yeri geldiğinde işlevine çözüm veya gelişim sağlamak amacıyla kullanılan bir yöntemdir. Burada bahsettiğim <strong> bir şey</strong>, bir yazılım, donanım veya bir ürün olabilir. Yani kısac yöntemin esas amacı, ürünün veya sistemin nasıl çalıştığını anlamak veya güvenlik açıklarını belirlemek için kullanılır. 
+                        <br> <br>
+                        Şu da sanılmasın ki, Reverse Engineering alanı sadece yazılım veya siber güvenlik alanlarda mevcut. Hayır! Reverse Engineering, yazılım, donanım, mekanik/donanım gibi birçok alanlarda kullanılır. Yani geniş kapsamlı bir alandır. Mesela yazılımda bir programın zafiyetini tespit etmek için kullanılırken, mekanik'te ise bir ürünün fiziksel yapısını anlamak için kullanılabilir. Bunlar sadece bir kaç örnek.  
+                        <br> <br>
+                        Siber güvenlik alanında ise Reverse Engineering yöntemi yaygın kullanılır. Mesela yukarıda verdiğim örnek gibi, bir yazılımın güvenlik açığını bulmak olabilir veya reverse yöntemleri kullanılarak sisteme erişim sağlamak için olabilir. Bunlara ilerideki dakikalarda detaya gireceğim. 
+                        <br> <br>
+                        Siber güvenlik alanlarında yaygın olarak reverse engineering yöntemi kullanan bir kaç alan:
+                        <br>
+                    </p> <br> 
+                    <ul>
+                        <li> <span> Malware Analysis <b> --> </b> </span> Bu alanda özellikle Reverse Engineering yöntemleri fazlasıyla kullanılır. Bir Malware'in analiz sürecinde öncelikle onu tespit etmek, sistem içerisindeki davranışlarını öğrenmek ve imha etmek için çeşitli Reverse Engineering yöntemleri kullanılır. Bunun için geliştirilmiş bir çok araçlar bulunuyor. </li> <br> 
+                        <li> <span> Binary Exploitation <b> --> </b> </span> Reverse Engineering yöntemleri kullanılarak, yazılımın <strong> varolan </strong> güvenlik açıklarından yararlanarak, yazılımın saldırganın istediği çalışmasını sağlayan bir tekniktir. Bu yöntemi kullanmak için yazılımın kaynak kodları ve arka planda çalışan Assembly kodları incelenip daha sonra açıkları tespit edip, bulduğu açıktan yararlanılan bir yöntemdir. </li> <br>  
+                        <li> <span> Firmware Analysis <b> --> </b> </span> Firmware Analizin'de ise firmware'in nasıl çalıştığını anlamak için Reverse Engineering yöntemleri kullanılır. Aynı zamanda bu firmware'de bulunan güvenlik açıklarını tespit etmesine ve kapanmasına yardımcı olabilir. </li>
+                    </ul> <br> <br>
+                    <p> Daha bir çok örnek verilebilir ancak bu kadar yeterli olacağını düşünüyorum. </p> <br> 
+                </div>
+            </main>
+          </div>
+            <a href="../../../../index.html"> <button class="btn load-more">Back to Home Page --> </button> </a>
+        </div>
+        <div class="aside">
+          <div class="topics">
+            <h2 class="h2">Topics</h2>
+            <a href="../reverse-category.html" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="sync-outline"></ion-icon>
+              </div>
+              <p> Reverse Engineering </p>
+            </a>
+            <a href="../assembly-category.html" class="topic-btn">
+              <div class="icon-box">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <p> Assembly  </p>
+            </a>
+          </div>
+          <div class="tags">
+            <h2 class="h2">Tags</h2>
+            <div class="wrapper">
+              <button class="hashtag">#reversenegineering</button>
+              <button class="hashtag">#reverse</button>
+              <button class="hashtag">#binary</button>
+            </div>
+          </div>
+          <div class="contact">
+            <h2 class="h2">Let's Talk</h2>
+            <div class="wrapper">
+              <p>
+                  Eğer konularda takıldığınız noktalar veya sorularınız olursa benimle iletişime geçebilirsiniz!
+              </p>
+              <ul class="social-link">
+                <li>
+                  <a href="https://github.com/devTBenoth" class="icon-box github">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://instagram.com/froghlatasch" class="icon-box instagram">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="icon-box reddit">
+                    <ion-icon name="logo-reddit"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../../../js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
